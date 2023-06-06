@@ -77,6 +77,6 @@ public class Carrello {
 
         }
 
-        System.out.println("La somma totale del carello compresa l'iva: " + sommaCarrello + " €");
+        System.out.println("La somma totale del carello compresa l'iva: " + String.format("%.2f", sommaCarrello) + " €");
     }
 }

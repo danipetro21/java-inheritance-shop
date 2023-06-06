@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="consegna esercizio base">
+    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="add bonus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Carrello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Carrello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Cuffia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Cuffia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Prodotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java" afterDir="false" />
     </list>
@@ -84,8 +83,26 @@
       <option name="project" value="LOCAL" />
       <updated>1686060096756</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add bonus">
+      <created>1686064951683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686064951683</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base shop class" />
@@ -93,6 +110,7 @@
     <MESSAGE value="test classe Smartphone extends prodotto" />
     <MESSAGE value="test classi televisone e cuffia extends prodotto" />
     <MESSAGE value="consegna esercizio base" />
-    <option name="LAST_COMMIT_MESSAGE" value="consegna esercizio base" />
+    <MESSAGE value="add bonus" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bonus" />
   </component>
 </project>

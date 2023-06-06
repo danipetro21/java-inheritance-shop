@@ -55,18 +55,24 @@ public class Televisione extends Prodotto {
         setSmart(smar);
     }
 
+
+    public double getDifferenza() {
+        double prezzoSott;
+        return prezzoSott = getPrezzoIva() - prezzoScontato();
+    }
+
     @Override
     public String getCheckOut() {
-        return super.getCheckOut() + " - " + "Pollici: " + dimensione;
+        return super.getCheckOut() + " - " + "Pollici: " + dimensione + " | Sconto: " + String.format("%.2f", getDifferenza()) + " €";
     }
 
     @Override
     public double prezzoScontato() {
         double scontoS = 10;
         double newPrezzo;
-        if (!smart && isCartaFedeltà()){
+        if (!smart && isCartaFedeltà()) {
             return newPrezzo = super.prezzoScontato() - (super.prezzoScontato() * scontoS / 100);
-        }else{
+        } else {
             return super.prezzoScontato();
         }
     }

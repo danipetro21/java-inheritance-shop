@@ -54,18 +54,23 @@ public class Cuffia extends Prodotto {
         setConnettivita(conn);
     }
 
+    public double getDifferenza() {
+        double prezzoSott;
+        return prezzoSott = getPrezzoIva() - prezzoScontato();
+    }
+
     @Override
     public String getCheckOut() {
-        return super.getCheckOut() + " - " + "Colore: " + colore + " - " + "Connettivita: " + connettivita;
+        return super.getCheckOut() + " - " + "Colore: " + colore + " - " + "Connettivita: " + connettivita + " | Sconto: " + String.format("%.2f", getDifferenza()) + " €";
     }
 
     @Override
     public double prezzoScontato() {
         double scontoS = 7;
         double newPrezzo;
-        if (connettivita.equals("cablate") && isCartaFedeltà()){
+        if (connettivita.equals("cablate") && isCartaFedeltà()) {
             return newPrezzo = super.prezzoScontato() - (super.prezzoScontato() * scontoS / 100);
-        }else{
+        } else {
             return super.prezzoScontato();
         }
     }

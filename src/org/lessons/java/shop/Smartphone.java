@@ -1,5 +1,7 @@
 package org.lessons.java.shop;
 
+import org.lessons.java.helper.Helper;
+
 import java.util.Scanner;
 
 public class Smartphone extends Prodotto {
@@ -53,9 +55,11 @@ public class Smartphone extends Prodotto {
         setMemory(memoria);
     }
 
-    @Override
-    public String getCheckOut(){
-        return super.getCheckOut() + " - " + "Imei: " + imei + " - " + "Memoria: " + memory;
+
+
+    public double getDifferenza(){
+        double prezzoSott;
+        return prezzoSott = getPrezzoIva() - prezzoScontato();
     }
 
 
@@ -68,6 +72,11 @@ public class Smartphone extends Prodotto {
         }else{
             return super.prezzoScontato();
         }
+    }
+
+    @Override
+    public String getCheckOut(){
+        return super.getCheckOut() + " - " + "Imei: " + imei + " - " + "Memoria: " + memory + " | Sconto: " + String.format("%.2f", getDifferenza()) + " €";
     }
 
 }
