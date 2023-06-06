@@ -2,9 +2,7 @@ package org.lessons.java.shop;
 
 import org.lessons.java.helper.Helper;
 
-import java.math.BigDecimal;
-
-public class Shop {
+public class Prodotto {
 
     private int codice;
     private String nome;
@@ -13,7 +11,7 @@ public class Shop {
     private double iva;
 
 
-    public Shop(String nome, String descrizione, double prezzo, double iva) {
+    public Prodotto(String nome, String descrizione, double prezzo, double iva) {
         this.codice = Helper.generateCode();
         this.nome = nome;
         this.descrizione = descrizione;

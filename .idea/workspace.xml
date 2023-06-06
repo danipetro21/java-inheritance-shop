@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/helper/Helper.java" afterDir="false" />
+    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="base shop class">
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Cuffie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Prodotto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,18 @@
       <option name="presentableId" value="Default" />
       <updated>1686053502079</updated>
     </task>
+    <task id="LOCAL-00001" summary="base shop class">
+      <created>1686054701355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686054701355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="base shop class" />
+    <option name="LAST_COMMIT_MESSAGE" value="base shop class" />
   </component>
 </project>

@@ -10,7 +10,7 @@ public class Main {
         double iva = 0.22;
 
 
-        Shop televisione = new Shop("televisione", "55 policci", prezzoNetto, iva);
+        Prodotto televisione = new Prodotto("televisione", "55 policci", prezzoNetto, iva);
 
         System.out.println(televisione.getFullName());
         System.out.println("Prezzo netto: " + televisione.getPrezzo() + " €");
