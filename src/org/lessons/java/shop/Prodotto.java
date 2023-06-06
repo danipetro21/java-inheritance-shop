@@ -12,9 +12,15 @@ public class Prodotto {
     private double prezzo;
     private double iva;
 
+    private boolean cartaFedeltà;
+
 
     public Prodotto() {
         this.codice = Helper.generateCode();
+    }
+
+    public Prodotto(Boolean cartaFedeltà){
+        this.cartaFedeltà = cartaFedeltà;
     }
 
     public Prodotto(String nome, String descrizione, double prezzo, double iva) {
@@ -45,6 +51,9 @@ public class Prodotto {
         return iva;
     }
 
+    public boolean isCartaFedeltà() {
+        return cartaFedeltà;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -62,13 +71,16 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public void setCartaFedeltà(boolean cartaFedeltà) {
+        this.cartaFedeltà = cartaFedeltà;
+    }
 
     public String getFullName() {
         return codice + "-" + nome;
     }
 
 
-    public String getCheckOut(){
+    public String getCheckOut() {
         return "Codice Prodotto: " + codice + " - " + "Nome: " + nome;
     }
 
@@ -94,6 +106,19 @@ public class Prodotto {
         System.out.print("Inserisci iva prodotto: ");
         double vat = scan.nextDouble();
         setIva(vat);
+
+    }
+
+    public double prezzoScontato() {
+        double sconto = 2;
+        double prezzoScontato;
+        if (cartaFedeltà) {
+
+            prezzoScontato = getPrezzoIva() - (getPrezzoIva() * sconto / 100);
+            return prezzoScontato;
+        } else {
+            return getPrezzoIva();
+        }
 
     }
 

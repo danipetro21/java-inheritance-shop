@@ -2,15 +2,16 @@ package org.lessons.java.shop;
 
 import java.util.Scanner;
 
-public class Televisione extends Prodotto{
+public class Televisione extends Prodotto {
 
     private int dimensione;
-    private boolean smart ;
+    private boolean smart;
 
 
-    public Televisione(){
+    public Televisione() {
 
     }
+
     public Televisione(String nome, String descrizione, double prezzo, double iva, int dimensione, boolean smart) {
         super(nome, descrizione, prezzo, iva);
         this.dimensione = dimensione;
@@ -40,7 +41,7 @@ public class Televisione extends Prodotto{
     }
 
     @Override
-    public void inputCarrello(){
+    public void inputCarrello() {
         super.inputCarrello();
 
         Scanner scan = new Scanner(System.in);
@@ -55,8 +56,18 @@ public class Televisione extends Prodotto{
     }
 
     @Override
-    public String getCheckOut(){
+    public String getCheckOut() {
         return super.getCheckOut() + " - " + "Pollici: " + dimensione;
     }
 
+    @Override
+    public double prezzoScontato() {
+        double scontoS = 10;
+        double newPrezzo;
+        if (!smart && isCartaFedeltà()){
+            return newPrezzo = super.prezzoScontato() - (super.prezzoScontato() * scontoS / 100);
+        }else{
+            return super.prezzoScontato();
+        }
+    }
 }

@@ -58,4 +58,16 @@ public class Smartphone extends Prodotto {
         return super.getCheckOut() + " - " + "Imei: " + imei + " - " + "Memoria: " + memory;
     }
 
+
+    @Override
+    public double prezzoScontato() {
+        double scontoS = 5;
+        double newPrezzo;
+        if (memory <= 32 && isCartaFedeltà()){
+            return newPrezzo = super.prezzoScontato() - (super.prezzoScontato() * scontoS / 100);
+        }else{
+            return super.prezzoScontato();
+        }
+    }
+
 }

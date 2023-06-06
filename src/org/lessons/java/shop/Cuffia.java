@@ -2,7 +2,7 @@ package org.lessons.java.shop;
 
 import java.util.Scanner;
 
-public class Cuffia extends Prodotto{
+public class Cuffia extends Prodotto {
 
     private String colore;
     private String connettivita;
@@ -40,7 +40,7 @@ public class Cuffia extends Prodotto{
     }
 
     @Override
-    public void inputCarrello(){
+    public void inputCarrello() {
         super.inputCarrello();
 
         Scanner scan = new Scanner(System.in);
@@ -55,8 +55,19 @@ public class Cuffia extends Prodotto{
     }
 
     @Override
-    public String getCheckOut(){
+    public String getCheckOut() {
         return super.getCheckOut() + " - " + "Colore: " + colore + " - " + "Connettivita: " + connettivita;
+    }
+
+    @Override
+    public double prezzoScontato() {
+        double scontoS = 7;
+        double newPrezzo;
+        if (connettivita.equals("cablate") && isCartaFedeltà()){
+            return newPrezzo = super.prezzoScontato() - (super.prezzoScontato() * scontoS / 100);
+        }else{
+            return super.prezzoScontato();
+        }
     }
 
 }
