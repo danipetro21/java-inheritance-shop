@@ -6,15 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double prezzoNetto = 200.00;
-        double iva = 0.22;
 
 
-        Prodotto televisione = new Prodotto("televisione", "55 policci", prezzoNetto, iva);
+        Prodotto televisione = new Prodotto("televisione", "55 policci", 149, 0.22);
 
-        System.out.println(televisione.getFullName());
-        System.out.println("Prezzo netto: " + televisione.getPrezzo() + " €");
-        System.out.println("Prezzo con iva: " + Helper.getPrezzoIva(prezzoNetto, iva) + " €");
+        Smartphone iphone = new Smartphone("iphone", "iphone 14 pro max", 1499.00, 0.22,"FDDSD232312", 128);
+
+
+        System.out.println("Prezzo con iva : " + iphone.getFullName() + "\n" + iphone.getPrezzoIva() + " €");
+
+        System.out.println("Prezzo con iva : " + televisione.getFullName() + "\n" + televisione.getPrezzoIva() + " €");
+
 
     }
 }

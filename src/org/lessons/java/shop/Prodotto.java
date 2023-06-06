@@ -61,5 +61,8 @@ public class Prodotto {
         return codice + "-" + nome;
     }
 
+    public double getPrezzoIva(){
+        return Helper.getPrezzoIva(prezzo,iva);
+    }
 
 }
