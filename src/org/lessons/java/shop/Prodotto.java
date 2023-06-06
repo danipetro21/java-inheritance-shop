@@ -2,6 +2,8 @@ package org.lessons.java.shop;
 
 import org.lessons.java.helper.Helper;
 
+import java.util.Scanner;
+
 public class Prodotto {
 
     private int codice;
@@ -10,6 +12,10 @@ public class Prodotto {
     private double prezzo;
     private double iva;
 
+
+    public Prodotto() {
+        this.codice = Helper.generateCode();
+    }
 
     public Prodotto(String nome, String descrizione, double prezzo, double iva) {
         this.codice = Helper.generateCode();
@@ -61,8 +67,35 @@ public class Prodotto {
         return codice + "-" + nome;
     }
 
-    public double getPrezzoIva(){
-        return Helper.getPrezzoIva(prezzo,iva);
+
+    public String getCheckOut(){
+        return "Codice Prodotto: " + codice + " - " + "Nome: " + nome;
     }
+
+    public double getPrezzoIva() {
+        return Helper.getPrezzoIva(prezzo, iva);
+    }
+
+    public void inputCarrello() {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Inserisci marca prodotto: ");
+        String marca = scan.nextLine();
+        setNome(marca);
+
+        System.out.print("Inserisci descrizione prodotto: ");
+        String desc = scan.nextLine();
+        setDescrizione(desc);
+
+        System.out.print("Inserisci prezzo prodotto: ");
+        double pre = scan.nextDouble();
+        setPrezzo(pre);
+
+        System.out.print("Inserisci iva prodotto: ");
+        double vat = scan.nextDouble();
+        setIva(vat);
+
+    }
+
 
 }

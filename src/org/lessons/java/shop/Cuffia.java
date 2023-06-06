@@ -1,9 +1,16 @@
 package org.lessons.java.shop;
 
+import java.util.Scanner;
+
 public class Cuffia extends Prodotto{
 
     private String colore;
     private String connettivita;
+
+    public Cuffia() {
+
+    }
+
 
     public Cuffia(String nome, String descrizione, double prezzo, double iva, String colore, String connettivita) {
         super(nome, descrizione, prezzo, iva);
@@ -30,6 +37,26 @@ public class Cuffia extends Prodotto{
     @Override
     public String getFullName() {
         return super.getFullName() + "-" + colore + "-" + connettivita;
+    }
+
+    @Override
+    public void inputCarrello(){
+        super.inputCarrello();
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Inserisci colore prodotto: ");
+        String color = scan.nextLine();
+        setColore(color);
+
+        System.out.print("Specifica la connettivita': ");
+        String conn = scan.nextLine();
+        setConnettivita(conn);
+    }
+
+    @Override
+    public String getCheckOut(){
+        return super.getCheckOut() + " - " + "Colore: " + colore + " - " + "Connettivita: " + connettivita;
     }
 
 }

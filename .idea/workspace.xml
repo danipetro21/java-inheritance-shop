@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="test classe Smartphone extends prodotto">
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" afterDir="false" />
+    <list default="true" id="c63e9f11-f963-420f-810a-c052734f4f11" name="Changes" comment="test classi televisone e cuffia extends prodotto">
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Carrello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Cuffia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Cuffia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Prodotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,13 +70,33 @@
       <option name="project" value="LOCAL" />
       <updated>1686056070400</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test classi televisone e cuffia extends prodotto">
+      <created>1686056556116</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686056556116</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base shop class" />
     <MESSAGE value="fix name class &quot;prodotto&quot;" />
     <MESSAGE value="test classe Smartphone extends prodotto" />
-    <option name="LAST_COMMIT_MESSAGE" value="test classe Smartphone extends prodotto" />
+    <MESSAGE value="test classi televisone e cuffia extends prodotto" />
+    <option name="LAST_COMMIT_MESSAGE" value="test classi televisone e cuffia extends prodotto" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/org/lessons/java/shop/Televisione.java</url>
+          <line>6</line>
+          <properties field="dimensione" class="org.lessons.java.shop.Televisione" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
